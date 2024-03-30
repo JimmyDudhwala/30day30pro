@@ -5,13 +5,9 @@
 }
 
 body{
-
     height: auto;
     width: auto;
-    
     background-color: lightcyan;
-
-
 }
 
 
@@ -22,11 +18,9 @@ body{
     display: flex;
     justify-content:center;
     top: 270px;
-
 }
 
 .remove{
-
     position: relative;
     display: flex;
     justify-content: center;
@@ -41,28 +35,21 @@ button{
     margin:10px;
     padding: 10px;
     border-radius: 20px;
-    
-
 }
 
 button.red{
-
     background-color: rgb(255, 55, 55);
 }
 
 button.green{
-
     background-color: rgb(53, 255, 53);
 }
 
 button.blue{
-
     background-color: rgb(40, 40, 255);
 }
 
 button.erase{
-
     background-color: rgba(0, 0, 0, 0.734);
-
 }
 
