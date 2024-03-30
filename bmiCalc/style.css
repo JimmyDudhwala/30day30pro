@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: auto;
+    width: auto;
+    background-color: lightcyan;
+}
+
+.head{
+
+    margin-top: 40px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form{
+
+    width: auto;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.height{
+
+   margin-bottom: 10px;
+  
+}
+
+.weight{
+
+    margin-bottom: 10px;
+   
+ }
+
+ .submit{
+
+    margin-bottom: 10px;
+    height: 40px;
+    width: 240px;
+
+ }
