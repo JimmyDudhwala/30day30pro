@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-
-
-
-// complete this you have to write the script.js file
-// you have to write the script.js file
-
-
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>guess the number</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
-    <h1>Guess the number</h1>
-    <p>Guess the number between 1 and 100</p>
-
-    <div class="form">
-      <div class="ip">
-        <p>
-          Enter your guess:
-          <input type="text" id="guess"  />
-        </p>
+    <div class="main">
+      <div class="head">
+        <span class="tag">Guess the Number</span>
       </div>
-      <input type="submit" value="Submit" id="sbt" />
 
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
+      <div class="rules">
+        <span class="title">Rules :</span>
+        <div class="list">
+          <ul>
+            <li>guess the number between 1 to 100</li>
+            <br />
+            <li>you have only 10 chance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form">
+        <div class="number">
+          <span class="text">ENTER YOUR PREDICTION :</span>
+          <input type="number" id="guess" class="guess" />   
+
+        </div>
+        
+      </div>
+      <div class="container">
+        <button type="button" class="Sbtn" id="Sbtn">SUBMIT</button>
+        <div>
+          <span id></span>
+        </div>
+      </div>
+
+      <div>
+        <div class="container">
+          <button type="button" class="Hbtn" id="Hbtn">HINT</button>
+        </div>
+        <span id></span>
+      </div>
     </div>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>
