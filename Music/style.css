@@ -58,3 +58,11 @@ button:hover{
     background-color:#3F42F3;
     box-shadow: none;
 }
+
+.playing{
+    background-color: black;
+    color : black;
+    box-shadow: none;
+    border-color: none;
+
+}
