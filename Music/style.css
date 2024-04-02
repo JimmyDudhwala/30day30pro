@@ -54,10 +54,7 @@ button{
     color: #FBFFF1;
 }
 
-button:hover{
-    background-color:#3F42F3;
-    box-shadow: none;
-}
+
 
 .playing{
     background-color: black;
