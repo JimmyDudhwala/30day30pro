@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>guess the number</title>
     <link rel="stylesheet" href="style.css" />
+    
+    
   </head>
   <body>
+    
     <div class="main">
       <div class="head">
         <span class="tag">Guess the Number</span>
@@ -17,34 +20,40 @@
         <div class="list">
           <ul>
             <li>guess the number between 1 to 100</li>
-            <br />
+            <br/>
             <li>you have only 10 chance</li>
           </ul>
         </div>
       </div>
-      <div class="form">
-        <div class="number">
+      <form action="#">
+        <div class="num">
           <span class="text">ENTER YOUR PREDICTION :</span>
-          <input type="number" id="guess" class="guess" />   
-
+          
+          <input type="number" id="pre" class="guess" />   
+          
         </div>
-        
-      </div>
-      <div class="container">
-        <button type="button" class="Sbtn" id="Sbtn">SUBMIT</button>
+
+      </form> 
+      <div class="container1">
+        <button type="button" class="Sbtn" id="btn">SUBMIT</button>
         <div>
-          <span id></span>
+          <span id = "advice"></span>
         </div>
       </div>
 
-      <div>
-        <div class="container">
+
+      <!-- improve this functionallity later .... -->
+
+      <!-- <div>
+        <div class="container2">
           <button type="button" class="Hbtn" id="Hbtn">HINT</button>
         </div>
         <span id></span>
-      </div>
+      </div> -->
     </div>
 
-    <script type="module" src="script.js"></script>
+    <script  src="/gaussTHEno/script.js"></script>
+    
+    
   </body>
 </html>

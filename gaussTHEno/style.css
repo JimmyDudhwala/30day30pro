@@ -81,7 +81,7 @@ div.list{
     font-size: 20px;
 }
 
-div.form{
+form{
 
     
     display: flex;
@@ -102,7 +102,7 @@ span.text{
 }
 
 input[type=number] {
-    width: 100%;
+    width: 100%;                                                    
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -120,7 +120,7 @@ input[type=number]:focus {
   }
 
 
-  .container{
+  .container1{
 
     
     display: flex;
@@ -132,7 +132,7 @@ input[type=number]:focus {
 
 
   }
-  .container .Sbtn {
+  .container1 .Sbtn {
     
     width: 100px;
     height: 50px; 
@@ -146,7 +146,7 @@ input[type=number]:focus {
     
   }
   
-  .container .Sbtn:hover {
+  .container1 .Sbtn:hover {
 
     background-color: #f4e476;
     box-shadow: 5px 5px #555;
@@ -154,7 +154,20 @@ input[type=number]:focus {
 
   }
 
-  .container .Hbtn {
+  .container2{
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 30px;
+
+
+  }
+
+  .container2 .Hbtn {
     
     width: 100px;
     height: 50px;
@@ -169,12 +182,19 @@ input[type=number]:focus {
     
   }
   
-  .container .Hbtn:hover {
+  .container2 .Hbtn:hover {
 
     background-color: #121212;
     box-shadow: 5px 5px #555;
     text-decoration: underline;
     color: #f4e476;
+
+  }
+
+  span.advice{
+
+    color : red;
+    font-size: 25px;
 
   }
 
