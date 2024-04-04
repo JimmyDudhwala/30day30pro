@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Josefin+Sans:wght@700&family=Lobster&family=Rubik+Scribble&display=swap');
+
+
+*{
+    box-sizing:border-box;
+}
+
+.header{
+   
+    display: flex;
+    justify-content: center;
+    font-family: "Lobster", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 40px;
+
+}
+
+.form{
+
+    display: flex;
+    justify-content: center;
+    font-family: "Lobster", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.image{
+
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding: 100px;
+    filter: blur(3px);
+
+}
+
+img{
+    
+    height: 400px;
+    width: 600px;
+    
+}
