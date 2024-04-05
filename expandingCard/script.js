@@ -19,7 +19,7 @@ panel.forEach((panel) => {
             removeActiveClasses();
             console.log(e.target.style.backgroundImage);
             body.style.backgroundImage = e.target.style.backgroundImage;
-            panel.classList.add('select'); // Add class to the clicked panel
+            panel.classList.add('select'); 
 
             
         } 
