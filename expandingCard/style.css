@@ -4,9 +4,12 @@
 }
 
 body{
-   height: 1000px;
-   background-color: rgb(203, 248, 248);
-}   
+    background-image: none;
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+
+} 
 
 .place{
     height: 730px;
@@ -31,5 +34,13 @@ body{
     flex:1;
     margin: 10px;
     border-radius: 10px;
+    
 }
+
+.select{
+    
+    display: none;
+}
+
+
 
