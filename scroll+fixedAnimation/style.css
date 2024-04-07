@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 1000;
+    
+}
+
+.center{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+    
+}
+
+.logoContainer{
+
+    height: 50px;
+    width: 100px;
+    background-color: black;
+
+}
+
+div.list{
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 45px;
+}
+li{
+    list-style-type: none;
+}
+
+
+.photo{
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    height: 800px;
+    background-image:url(/scroll+fixedAnimation/blue-backpack-wooden-table.jpg);
+    background-size: cover;
+    background-position: right;
+    font-size: 25px;
+}
+
+.scroll-1{
+    
+    height: 400px;
+    width: 1200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.box1{
+
+    margin: 10px;
+    background-image: url(/scroll+fixedAnimation/box1.jpg);
+    background-size: cover;
+    background-position: center;
+    height:360px;
+    width: 500px;
+    
+
+}
+
+.box2{
+    margin: 10px;
+    background-image:url(/scroll+fixedAnimation/box2.jpg);
+    background-size: cover;
+    background-position: center;
+    height:360px;
+    width: 500px;
+    
+}
+
+.box3{
+
+    margin: 10px;
+    background-image: url(/scroll+fixedAnimation/box1.jpg);
+    background-size: cover;
+    background-position: center;
+    height:360px;
+    width: 500px;
+
+}
+
+.box4{
+
+    margin: 10px;
+    background-image:url(/scroll+fixedAnimation/box2.jpg);
+    background-size: cover;
+    background-position: center;
+    height:360px;
+    width: 500px;
+}
+
+.price{
+
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
