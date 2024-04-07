@@ -25,7 +25,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     const box3 = document.querySelector('.box3');
 
-    if (window.scrollY > 2*(window.innerHeight) / 3) {
+    if (window.scrollY > 3*(window.innerHeight) / 4) {
        box3.classList.add('show');
     } else {
         box3.classList.remove('show');
@@ -35,7 +35,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     const box4 = document.querySelector('.box4');
 
-    if (window.scrollY > 2*(window.innerHeight) / 3) {
+    if (window.scrollY > 3*(window.innerHeight) / 4) {
        box4.classList.add('show');
     } else {
         box4.classList.remove('show');
