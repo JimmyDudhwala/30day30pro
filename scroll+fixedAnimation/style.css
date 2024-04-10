@@ -69,27 +69,14 @@ li{
     right: 0px;
     margin-top: 10px;
     display: flex;
-    
+    flex-direction: column;
     justify-content: center;
     align-items:center ;
-    overflow: auto;
-    overflow-x: hidden;
-    
-}
-
-.slider{
-
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+    height: 800px;
+    background-image:url(/scroll+fixedAnimation/background.jpg);
     background-size: cover;
     background-position: right;
-    font-size: 30px;
-    color:black;
-    height: 800px;
-    min-width: 1700px;
-    
-
+    font-size: 25px;
 }
 
 .scroll-1{
@@ -100,7 +87,6 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
    
 }
 
@@ -169,11 +155,11 @@ li{
 .drag{
 
 
-    
+    background-color: antiquewhite;
     display: flex;
     grid-gap: 10px;
     height: 400px;
-    width: 1178px;
+    width: 1200px;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -185,8 +171,5 @@ li{
     height: 400px;
     min-width: 390px;
     z-index: 4;
-    background-size: cover;
-    background-position: center;
-
     
-}
+}   

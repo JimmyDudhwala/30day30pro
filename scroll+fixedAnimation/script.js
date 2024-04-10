@@ -5,13 +5,13 @@ const box2 = document.querySelector('.box2');
 console.log(box1);
 console.log(window.scrollY);
 window.addEventListener('scroll', function() {
-        const box1 = document.querySelector('.box1');
+    const box1 = document.querySelector('.box1');
 
-        if (window.scrollY > window.innerHeight / 2) {
-             box1.classList.add('show');
-        } else {
-                box1.classList.remove('show');
-        }
+    if (window.scrollY > window.innerHeight / 2) {
+       box1.classList.add('show');
+    } else {
+        box1.classList.remove('show');
+    }
 });
 
 window.addEventListener('scroll', function() {
