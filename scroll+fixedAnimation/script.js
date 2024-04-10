@@ -1,4 +1,20 @@
+const textElement = document.querySelector('.textTimer');
+console.log(textElement);
+const text = "Welcome to BAG.XI";
+let index = 1;
+const speed = 200;
 
+const write = () => {
+
+    textElement.innerHTML =text.slice(0,index);
+    index++;
+    if (index > text.length) {
+        index = 1;
+    }
+    setTimeout(write, speed);
+}
+
+write();
 
 const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
