@@ -88,10 +88,13 @@ div.option img{
     height: 80px;
     width: 80px;
     opacity: 0.5;
-    transition:  opacity 0.3 ease;
+    transition:  opacity 0.3s ease;
 }
 
-div.option img:hover{
-    opacity: 1;
+
+ div.option img.active{
+    opacity:1; 
+   
 }
+
 
