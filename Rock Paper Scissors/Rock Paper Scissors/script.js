@@ -3,7 +3,10 @@ const gameContainer = document.querySelector(".container"),
   userResult = document.querySelector(".user_result img"),
   cpuResult = document.querySelector(".cpu_result img"),
   result = document.querySelector(".result"),
-  optionImages = document.querySelectorAll(".option_image");
+  optionImages = document.querySelectorAll(".option_image"),
+  userChoice = document.querySelector(".userChoice"),
+  cpuChoice = document.querySelector(".cpuChoice");
+
 
 
 optionImages.forEach((image, index) => {
@@ -36,28 +39,29 @@ optionImages.forEach((image, index) => {
      
       cpuResult.src = cpuImages[randomNumber]
 
-      let cpuValue = ["R", "P", "S"][randomNumber];
+      let cpuValue = ["Rock", "Paper", "Scissors"][randomNumber];
       
-      let userValue = ["R", "P", "S"][index];
+      let userValue = ["Rock", "Paper", "Scissors"][index];
 
       
       let outcomes = {
-        RR: "Draw",
-        RP: "Cpu",
-        RS: "User",
-        PP: "Draw",
-        PR: "User",
-        PS: "Cpu",
-        SS: "Draw",
-        SR: "Cpu",
-        SP: "User",
+        RockRock: "Draw",
+        RockPaper: "Cpu",
+        RockScissors: "User",
+        PaperPaper: "Draw",
+        PaperRock: "User",
+        PaperScissors: "Cpu",
+        ScissorsScissors: "Draw",
+        ScissorsRock: "Cpu",
+        ScissorsPaper: "User",
       };
 
     
       let outComeValue = outcomes[userValue + cpuValue];
 
-  
       result.textContent = userValue === cpuValue ? "Match Draw" : `${outComeValue} Won!!`;
+      userChoice.innerHTML = userValue;
+      cpuChoice.innerHTML = cpuValue;
     }, 2500);
   });
 });
