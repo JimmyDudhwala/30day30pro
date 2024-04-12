@@ -7,8 +7,6 @@ const gameContainer = document.querySelector(".container"),
   userChoice = document.querySelector(".userChoice"),
   cpuChoice = document.querySelector(".cpuChoice");
 
-
-
 optionImages.forEach((image, index) => {
   image.addEventListener("click", (e) => {
     image.classList.add("active");
