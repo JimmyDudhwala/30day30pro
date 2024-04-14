@@ -3,13 +3,13 @@ const checkboxes = document.querySelectorAll('.checkbox');
 
 selectAll.addEventListener('click', function() {
     
-    for(let checkbox of checkboxes) {
+    checkboxes.forEach(checkbox =>{
         if(selectAll.checked === true)
         checkbox.checked = true;
       else{
         checkbox.checked = false;
-    }
-    }
+      }
+    })
 });
 
 checkboxes.forEach(checkbox => {
@@ -22,6 +22,3 @@ checkboxes.forEach(checkbox => {
         }
     });
 });
-
-
-
