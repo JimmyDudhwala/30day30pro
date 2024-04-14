@@ -2,9 +2,6 @@
 const drop = document.querySelector('.dropDown');
 const input = document.querySelector('input');
 
-
-
-
 async function fetchData() {
     const response = await fetch('https://raw.githubusercontent.com/JimmyDudhwala/json/main/countries%2Bstates.json');
     const data = await response.json();
