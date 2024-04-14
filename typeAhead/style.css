@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"]{
+    width: 500px;
+}
+
+.dropDown{
+
+    height: 600px;
+    width: 500px;
+    
+}
