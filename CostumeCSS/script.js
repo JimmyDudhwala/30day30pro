@@ -31,8 +31,3 @@ for (let i = 0; i < color.length; i++) {
         imageStyle.backgroundColor = e.target.value;
     });
 }
-
-document.getElementById('imgFile').addEventListener('change', function(e) {
-    var imgElement = document.querySelector('img'); // Select the img element where you want to display the uploaded image
-    imgElement.src = URL.createObjectURL(e.target.files[0]); // Create a URL for the uploaded image file
-},);
