@@ -92,3 +92,25 @@ drag.addEventListener('mousemove', (e) => {
      console.log(e.clientX);
      
 });
+
+
+const attract = document.querySelectorAll('a');
+const Highlight = document.createElement('span');
+Highlight.classList.add('highlight');
+document.body.append(Highlight);
+
+attract.forEach(a => a.addEventListener('mouseenter', highlightPart));
+
+function highlightPart() {
+    
+    const linkCoords = this.getBoundingClientRect();
+    const coords = {
+        width: linkCoords.width,
+        height: linkCoords.height,
+        top: linkCoords.top + window.scrollY,
+        left: linkCoords.left + window.scrollX
+    };
+    Highlight.style.width = `${coords.width}px`;
+    Highlight.style.height = `${coords.height}px`;
+    Highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
+}
