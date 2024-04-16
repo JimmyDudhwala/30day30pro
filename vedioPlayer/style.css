@@ -1,18 +1,20 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 div.container{
     max-width: 1000px;
     height: 550px;  
-    
 }
 
 video{
     width: 1000px;
     height: 550px;
-    
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Added a value for justify-content */
+}
+
+label{
+    margin: 10px;
+    padding: 10px;
+}
