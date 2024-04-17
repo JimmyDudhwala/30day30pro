@@ -16,6 +16,49 @@ const write = () => {
 
 write();
 
+const logo  = document.querySelector('.logo');
+
+window.addEventListener('scroll',() =>{
+    if(window.scrollY > 0){
+        logo.classList.add('apply');
+    }
+    else{
+        logo.classList.remove('apply');
+    }
+})
+
+const search = document.querySelector('.search');
+const input = document.createElement('input');
+
+function createInput(){
+    
+    input.setAttribute('type','text');
+    input.setAttribute('placeholder','search...');
+    input.setAttribute('class','searchInput');
+    search.append(input);
+    let firstChild = search.firstChild;
+    search.insertBefore(input, firstChild);
+    input.classList.add('transition');
+
+}
+
+function destroyInput(){
+    
+    if (input) {
+        search.removeChild(input);
+        input.classList.remove('transition');
+    }
+}
+
+
+
+
+search.addEventListener('mouseenter',createInput);
+search.addEventListener('mouseleave',destroyInput);
+
+
+
+
 const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
 console.log(box1);
@@ -23,7 +66,7 @@ console.log(window.scrollY);
 window.addEventListener('scroll', function() {
     const box1 = document.querySelector('.box1');
 
-    if (window.scrollY > window.innerHeight / 2) {
+    if (window.scrollY > window.innerHeight / 12) {
        box1.classList.add('show');
     } else {
         box1.classList.remove('show');
@@ -33,7 +76,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     const box2 = document.querySelector('.box2');
 
-    if (window.scrollY > (window.innerHeight) / 2) {
+    if (window.scrollY > (window.innerHeight) / 12) {
        box2.classList.add('show');
     } else {
         box2.classList.remove('show');
@@ -43,7 +86,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     const box3 = document.querySelector('.box3');
 
-    if (window.scrollY > 3*(window.innerHeight) / 4) {
+    if (window.scrollY > 3*(window.innerHeight) / 6) {
        box3.classList.add('show');
     } else {
         box3.classList.remove('show');
@@ -53,7 +96,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     const box4 = document.querySelector('.box4');
 
-    if (window.scrollY > 3*(window.innerHeight) / 4) {
+    if (window.scrollY > 3*(window.innerHeight) / 6) {
        box4.classList.add('show');
     } else {
         box4.classList.remove('show');
@@ -93,24 +136,3 @@ drag.addEventListener('mousemove', (e) => {
      
 });
 
-
-const attract = document.querySelectorAll('a');
-const Highlight = document.createElement('span');
-Highlight.classList.add('highlight');
-document.body.append(Highlight);
-
-attract.forEach(a => a.addEventListener('mouseenter', highlightPart));
-
-function highlightPart() {
-    
-    const linkCoords = this.getBoundingClientRect();
-    const coords = {
-        width: linkCoords.width,
-        height: linkCoords.height,
-        top: linkCoords.top + window.scrollY,
-        left: linkCoords.left + window.scrollX
-    };
-    Highlight.style.width = `${coords.width}px`;
-    Highlight.style.height = `${coords.height}px`;
-    Highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
-}

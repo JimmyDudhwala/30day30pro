@@ -12,15 +12,6 @@
 a{
     text-decoration: none;
 
-    
-}
-
-.highlight {
-    position: absolute;
-    border: 2px solid black;
-    pointer-events: none;
-    transition: all 0.2s;
-   
 }
 .center{
 
@@ -40,11 +31,11 @@ nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 50px;
     background-color: azure;
     margin: 0px;
     box-shadow: 0px 7px 4px lightgray;
     z-index: 10;
+    overflow: visible;
     
 }
 
@@ -52,12 +43,40 @@ nav{
 
     height: 50px;
     width: 100px;
-    background-color: black;
+    background-color:azure;
     font-size: larger;
-    color: azure;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo {
+    transition: transform 0.5s ease;
+    transform: translateX(-200%);
+}
+
+.apply{
+    transform: translateX(0);
+}
+.searchinput {
+    outline: none;
+    border: none;
+    border-left: 2px solid rgb(100, 100, 100); /* Add this line */
+    background: transparent;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+    height: 40px;
+    padding: 10px;
+}
+
+.transition {
+ 
+    transform: translateX(0);
 }
 
 
@@ -74,6 +93,34 @@ li{
     list-style-type: none;
     
     
+}
+
+.Packsblock{
+    display: none;
+}
+
+ .bagepacks:hover .Packsblock{
+
+    display: block;
+    height: 150px;
+    width: 100vw;
+    background-color: azure;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.login{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 45px;
+
+}
+
+i{
+    margin-left: 25px;
 }
 
 
@@ -97,7 +144,7 @@ li{
 .scroll-1{
     
     height: 400px;
-    width: 1200px;
+    width: auto;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -114,7 +161,7 @@ li{
     height:360px;
     width: 500px;
     transform: translateX(-400%);
-   transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
     
 
 }
@@ -170,7 +217,6 @@ li{
 .drag{
 
 
-    background-color: antiquewhite;
     display: flex;
     grid-gap: 10px;
     height: 400px;
@@ -182,10 +228,12 @@ li{
 }
 
 .itme{
-
+    
     height: 400px;
     min-width: 390px;
     z-index: 4;
+    background-size: cover;
+    background-position: center;
     
 }   
 
