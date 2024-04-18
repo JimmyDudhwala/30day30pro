@@ -1,5 +1,5 @@
 const textElement = document.querySelector('.textTimer');
-console.log(textElement);
+
 const text = "Welcome to BAG.XI";
 let index = 1;
 const speed = 200;
@@ -16,7 +16,7 @@ const write = () => {
 
 write();
 
-const logo  = document.querySelector('.logo');
+const logo =document.querySelector('.logo');
 
 window.addEventListener('scroll',() =>{
     if(window.scrollY > 0){
@@ -27,42 +27,52 @@ window.addEventListener('scroll',() =>{
     }
 })
 
+const bagepacks = document.querySelector('.bagepacks');
+const packsblock = document.querySelector('.Packsblock');
+
+bagepacks.addEventListener('mouseenter',(e)=>{
+    console.log(e);
+    packsblock.classList.add('drop');
+})
+
+packsblock.addEventListener('mouseleave',()=>{
+    packsblock.classList.remove('drop');
+})
+
+const bags = document.querySelector('.bages');
+
+
+bags.addEventListener('mouseenter',(e)=>{
+    console.log(e);
+    packsblock.classList.add('drop');
+})
+
+packsblock.addEventListener('mouseleave',()=>{
+    packsblock.classList.remove('drop');
+})
+
+const luggage = document.querySelector('.luggage');
+
+luggage.addEventListener('mouseenter',(e)=>{
+    console.log(e);
+    packsblock.classList.add('drop');
+})
+
+packsblock.addEventListener('mouseleave',()=>{
+    packsblock.classList.remove('drop');
+})
+
+
 const search = document.querySelector('.search');
 const input = document.createElement('input');
 
-function createInput(){
-    
-    input.setAttribute('type','text');
-    input.setAttribute('placeholder','search...');
-    input.setAttribute('class','searchInput');
-    search.append(input);
-    let firstChild = search.firstChild;
-    search.insertBefore(input, firstChild);
-    input.classList.add('transition');
 
-}
-
-function destroyInput(){
-    
-    if (input) {
-        search.removeChild(input);
-        input.classList.remove('transition');
-    }
-}
-
-
-
-
-search.addEventListener('mouseenter',createInput);
-search.addEventListener('mouseleave',destroyInput);
-
-
-
+// search.addEventListener('mouseenter',createInput);
+// search.addEventListener('mouseleave',destroyInput);
 
 const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
-console.log(box1);
-console.log(window.scrollY);
+
 window.addEventListener('scroll', function() {
     const box1 = document.querySelector('.box1');
 
@@ -81,7 +91,7 @@ window.addEventListener('scroll', function() {
     } else {
         box2.classList.remove('show');
     }
-});
+}); 
 
 window.addEventListener('scroll', function() {
     const box3 = document.querySelector('.box3');
@@ -104,8 +114,6 @@ window.addEventListener('scroll', function() {
 });
 
 const drag = document.querySelector('.drag');
-
-console.log(drag);
 
 let press = false;
 let startX = 0;
@@ -132,7 +140,6 @@ drag.addEventListener('mousemove', (e) => {
      }
      e.preventDefault();
      drag.scrollLeft += startX - e.clientX;
-     console.log(e.clientX);
      
 });
 
