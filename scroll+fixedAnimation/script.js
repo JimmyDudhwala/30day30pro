@@ -142,4 +142,3 @@ drag.addEventListener('mousemove', (e) => {
      drag.scrollLeft += startX - e.clientX;
      
 });
-
