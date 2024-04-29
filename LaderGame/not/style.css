@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    width: 400px;
+    height: 500px;
+    
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(27, 55, 55);
+    border: 1px solid black;
+    box-shadow: 5px 5px 3px grey ;
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    top: 400px;
+    left: 190px;
+z-index: 1000000;
+}
+.block{
+    width: 400px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+.hole{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(27, 55, 55);
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
