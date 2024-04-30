@@ -1,0 +1,11 @@
+{ 
+    "name" : "First CromeExtention",
+    "version":"1.0.0",
+    "description":"made by jimmy",
+    "manifest_version":3,
+    "author":"DJ",
+    "action":{
+        "default_popup":"index.html",
+        "default_titlw":"crickscore"
+    }
+}
